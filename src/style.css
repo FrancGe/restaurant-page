@@ -1,3 +1,13 @@
+:root {
+  --color1: #FFFAF3;
+  --color2: #FFF2DB;
+  --color3: #0A2947;
+  --color4: #233D4D;
+  --color5: #000000;
+  --color6: #FE7F2D;
+  --color7: #EAECF0;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -8,4 +18,5 @@ html {
 }
 body {
   font-size: 16px;
+  font-family: "Science Gothic", sans-serif;
 }
