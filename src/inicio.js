@@ -1,6 +1,7 @@
 import iconoCh from "./assets/chef.svg";
 import iconoAmb from "./assets/ambiente.svg";
 import iconoServ from "./assets/servicio.svg";
+import imagenEnsalada from "./assets/ensaladas.webp";
 
 export function cargarInicio() {
     const contenedorInicio = document.createElement("div");
@@ -24,7 +25,7 @@ export function cargarInicio() {
 
     const descripcionSecundaria = document.createElement("p");
     descripcionSecundaria.classList.add("descripcion-secundaria");
-    descripcionSecundaria.textContent = "Mas que un lugar donde comer, buscamos ser un hogar y un refugio donde se encuentre reunido con sus personas mas queridas compartiendo platillos hecho con la mayor atención al detalle";
+    descripcionSecundaria.textContent = "Mas que un lugar donde comer,\n buscamos ser un hogar y un refugio donde se encuentre reunido con sus personas mas queridas\n compartiendo platillos hecho con la mayor atención al detalle";
 
     
     // Contenedor global de Iconos
@@ -66,6 +67,25 @@ export function cargarInicio() {
     contenedorIconoServicio.appendChild(iconoServicio);
     contenedorIconoServicio.appendChild(textoServicio);
 
+    const articuloPlatos = document.createElement("article");
+    articuloPlatos.classList.add("articulo-platos");
+
+    const imagenPlatos = document.createElement("img");
+    imagenPlatos.classList.add("imagen-platos");
+    imagenPlatos.src = imagenEnsalada;
+
+    const tituloPlatos = document.createElement("h3");
+    tituloPlatos.classList.add("titulo-platos");
+    tituloPlatos.textContent = "Conozca nuestros mejores platos";
+
+    // const descripcionPlatos = document.createElement("p");
+    // descripcionPlatos.textContent = "Contamos con platos elaborados con productos frescos y de primera calidad.\n
+    // Cada ingrediente esta pensado "
+
+
+    articuloPlatos.appendChild(imagenPlatos);
+    articuloPlatos.appendChild(tituloPlatos);
+
 
     // Apadrinadores globales
     contenedorFondo.appendChild(titulo);
@@ -79,6 +99,7 @@ export function cargarInicio() {
     contenedorInicio.appendChild(subtitulo);
     contenedorInicio.appendChild(descripcionSecundaria);
     contenedorInicio.appendChild(contenedorIconos);
+    contenedorInicio.appendChild(articuloPlatos);
   
     return contenedorInicio;
 }
