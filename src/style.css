@@ -25,18 +25,10 @@ body {
 .cabecera {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   justify-content: space-around;
   align-items: center;
   background-color: var(--color4);
-  
-
-  .navegacion {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2rem;
-    width: 80%;
-  }
 
   h1 {
     font-size: 5rem;
@@ -47,8 +39,25 @@ body {
   nav {
     font-size: 2.6rem;
     font-weight: 300;
-    margin: 1rem 0;
+    padding: 1rem 4rem;
+    border-radius: 1rem 1rem 0 0;
     color: var(--color2);
+  }
+}
+.navegacion {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  width: 80%;
+
+  .boton-inicio:hover {
+    cursor: pointer;
+    background-color: var(--color2);
+  }
+
+  .activo {
+    background-color: var(--color7);
+    color: var(--color5);
   }
 }
 
