@@ -59,7 +59,7 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   justify-content: center;
 
   .titulo-inicio {
@@ -82,6 +82,7 @@ body {
   font-weight: 400;
 }
 .descripcion-secundaria {
+  padding: 2.5rem;
   text-align: center;
   font-size: 2.2rem;
   font-weight: 350;
@@ -91,7 +92,7 @@ body {
 .contenedor-iconos {
   display: flex;
   justify-content: space-evenly;
-  padding: 5rem;
+  padding: 2.5rem;
 
   div {
     text-align: center;
@@ -110,8 +111,8 @@ body {
 
 .articulo-platos {
   padding: 4rem;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 61rem;
   align-items: center;
   width: 80%;
   margin-left: auto;
@@ -121,13 +122,64 @@ body {
   box-shadow: 0px 0px 5px -2px var(--color3);
 
   .imagen-platos {
-    width: 40%;
-    height: 60rem;
+    width: 60%;
+    height: 50rem;
     border-radius: 1rem;
+    justify-self: start;
+    
   }
   .titulo-platos {
     align-self: first baseline;
     font-size: 4rem;
     border-bottom: 2px solid var(--color4);
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .descripcion-platos {
+    white-space: pre-line;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    line-height: 4rem;
+    font-size: 2rem;
+    font-weight: 350;
+  }
+}
+
+.articulo-tragos {
+  margin: 2rem;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 61rem;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color1);
+  border-radius: 1rem;
+  box-shadow: 0px 0px 5px -2px var(--color3);
+
+  .imagen-tragos {
+    width: 60%;
+    height: 50rem;
+    border-radius: 1rem;
+    justify-self: start;
+    
+  }
+  .titulo-tragos {
+    align-self: first baseline;
+    font-size: 4rem;
+    border-bottom: 2px solid var(--color4);
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .descripcion-tragos {
+    white-space: pre-line;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    line-height: 4rem;
+    font-size: 2rem;
+    font-weight: 350;
   }
 }

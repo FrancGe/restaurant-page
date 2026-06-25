@@ -2,6 +2,7 @@ import iconoCh from "./assets/chef.svg";
 import iconoAmb from "./assets/ambiente.svg";
 import iconoServ from "./assets/servicio.svg";
 import imagenEnsalada from "./assets/ensaladas.webp";
+import imagenTrago from "./assets/tragos.webp";
 
 export function cargarInicio() {
     const contenedorInicio = document.createElement("div");
@@ -10,18 +11,13 @@ export function cargarInicio() {
     const contenedorFondo = document.createElement("div");
     contenedorFondo.classList.add("contenedor-fondo");
 
-
     const titulo = document.createElement("h1");
     titulo.classList.add("titulo-inicio");
     titulo.textContent = "Bienvenido!";
 
     const descripcion = document.createElement("p");
     descripcion.classList.add("descripcion-inicio");
-    descripcion.textContent = "¡Sientase a gusto de recorrer todo lo que tenemos para ofrecerle!"
-
-    const subtitulo = document.createElement("h3");
-    subtitulo.classList.add("subtitulo-inicio");
-    subtitulo.textContent = "Dejando el alma en cada plato para llevar a su mesa sabores que encierran la calida nostalgia del hogar!";
+    descripcion.textContent = "Dejando el alma en cada plato para llevar a su mesa sabores que encierran la calida nostalgia del hogar!";
 
     const descripcionSecundaria = document.createElement("p");
     descripcionSecundaria.classList.add("descripcion-secundaria");
@@ -78,14 +74,34 @@ export function cargarInicio() {
     tituloPlatos.classList.add("titulo-platos");
     tituloPlatos.textContent = "Conozca nuestros mejores platos";
 
-    // const descripcionPlatos = document.createElement("p");
-    // descripcionPlatos.textContent = "Contamos con platos elaborados con productos frescos y de primera calidad.\n
-    // Cada ingrediente esta pensado "
-
+    const descripcionPlatos = document.createElement("p");
+    descripcionPlatos.classList.add("descripcion-platos");
+    descripcionPlatos.textContent = "Contamos con platos elaborados con productos frescos y de primera calidad \nTenemos para ofrecerle diversos platillos como: \nCarnes con diversas preparaciones, \nEnsaladas y diversos acompañamientos, \nTapas y Entradas, \nPizzas gourmet, \nHamburguesas gourmet, \nPastas y demas platillos. \nCada preparacion se caracteriza por una preparacion unica y un toque personal";
 
     articuloPlatos.appendChild(imagenPlatos);
     articuloPlatos.appendChild(tituloPlatos);
+    articuloPlatos.appendChild(descripcionPlatos);
 
+
+    // Articulo Tragos
+    const articuloTragos = document.createElement("article");
+    articuloTragos.classList.add("articulo-tragos");
+
+    const imagenTragos = document.createElement("img");
+    imagenTragos.classList.add("imagen-tragos");
+    imagenTragos.src = imagenTrago;
+
+    const tituloTragos = document.createElement("h3");
+    tituloTragos.classList.add("titulo-tragos");
+    tituloTragos.textContent = "Tambien contamos con tragos de primera";
+
+    const descripcionTragos = document.createElement("p");
+    descripcionTragos.classList.add("descripcion-tragos");
+    descripcionTragos.textContent = "Tragos elaborados por bartender profesionales. \nContamos con diversas opciones con y sin alcohol. \nColeccion de vinos finos para acompañar su comida. \nTambien tenemos cervezas de todos los tipos."
+
+    articuloTragos.appendChild(imagenTragos);
+    articuloTragos.appendChild(tituloTragos);
+    articuloTragos.appendChild(descripcionTragos);
 
     // Apadrinadores globales
     contenedorFondo.appendChild(titulo);
@@ -96,10 +112,10 @@ export function cargarInicio() {
     contenedorIconos.appendChild(contenedorIconoServicio);
 
     contenedorInicio.appendChild(contenedorFondo);
-    contenedorInicio.appendChild(subtitulo);
     contenedorInicio.appendChild(descripcionSecundaria);
     contenedorInicio.appendChild(contenedorIconos);
     contenedorInicio.appendChild(articuloPlatos);
+    contenedorInicio.appendChild(articuloTragos);
   
     return contenedorInicio;
 }
