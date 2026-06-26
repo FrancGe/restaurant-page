@@ -1,3 +1,4 @@
+import "./css/inicio.css";
 import iconoCh from "./assets/chef.svg";
 import iconoAmb from "./assets/ambiente.svg";
 import iconoServ from "./assets/servicio.svg";

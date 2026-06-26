@@ -1,0 +1,69 @@
+:root {
+  --color1: #FFFAF3;
+  --color2: #FFF2DB;
+  --color3: #0A2947;
+  --color4: #233D4D;
+  --color5: #000000;
+  --color6: #FE7F2D;
+  --color7: #EAECF0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 16px;
+  font-family: "Science Gothic", sans-serif;
+  background-color: var(--color7);
+}
+
+.cabecera {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem 0 2rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color4);
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    padding: 2rem 0;
+    color: var(--color2);
+  }
+  nav {
+    font-size: 2.6rem;
+    font-weight: 300;
+    padding: 1rem 4rem;
+    border-radius: 1rem 1rem 0 0;
+    color: var(--color2);
+  }
+}
+.navegacion {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  width: 80%;
+
+  .boton-inicio:hover {
+    cursor: pointer;
+    background-color: var(--color2);
+    color: var(--color5);
+  }
+  .boton-menu:hover {
+    cursor: pointer;
+    background-color: var(--color2);
+    color: var(--color5);
+  }
+
+  .activo {
+    background-color: var(--color7);
+    color: var(--color5);
+  }
+}
+
