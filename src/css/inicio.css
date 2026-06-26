@@ -1,5 +1,5 @@
 .contenedor-fondo {
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.6)), url("./assets/restaurant2.webp");
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.6)), url("../assets/restaurant2.webp");
   height: 30rem;
   background-position: center;
   background-size: cover;
