@@ -9,32 +9,32 @@ import trago from "./assets/tragos.webp";
 const platos = [
     {
         titulo: "Carnes",
-        descripcion: "Diversos cortes a eleccion y con la preparacion que mas guste",
+        descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nulla vitae nulla semper pulvinar. Suspendisse varius fringilla fermentum. Pellentesque tincidunt libero ipsum, vel iaculis sapien vehicula et. Vivamus lacus ante, consectetur at quam ac, varius elementum odio. Proin vel leo eu odio feugiat placerat sed ut nisl. Duis non nibh bibendum, euismod lorem sed, fringilla dui. Aliquam dictum, orci sed rutrum ornare, justo nunc maximus nibh, vel semper leo tellus at enim. Aenean volutpat odio nulla, ut pulvinar metus porta ac. Duis iaculis odio neque, a maximus leo egestas ut.",
         imagen: carne
     },
     {
         titulo: "Acompañamientos",
-        descripcion: "Contamos con diferentes tipos de acompañamientos, desde los mas simples hasta las ensaladas mas gourmet",
+        descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nulla vitae nulla semper pulvinar. Suspendisse varius fringilla fermentum. Pellentesque tincidunt libero ipsum, vel iaculis sapien vehicula et. Vivamus lacus ante, consectetur at quam ac, varius elementum odio. Proin vel leo eu odio feugiat placerat sed ut nisl. Duis non nibh bibendum, euismod lorem sed, fringilla dui. Aliquam dictum, orci sed rutrum ornare, justo nunc maximus nibh, vel semper leo tellus at enim. Aenean volutpat odio nulla, ut pulvinar metus porta ac. Duis iaculis odio neque, a maximus leo egestas ut.",
         imagen: ensalada
     },
     {
         titulo: "Pizzas",
-        descripcion: "Diversos tipos de pizzas, pidalas por porcion, completas o combinadas",
+        descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nulla vitae nulla semper pulvinar. Suspendisse varius fringilla fermentum. Pellentesque tincidunt libero ipsum, vel iaculis sapien vehicula et. Vivamus lacus ante, consectetur at quam ac, varius elementum odio. Proin vel leo eu odio feugiat placerat sed ut nisl. Duis non nibh bibendum, euismod lorem sed, fringilla dui. Aliquam dictum, orci sed rutrum ornare, justo nunc maximus nibh, vel semper leo tellus at enim. Aenean volutpat odio nulla, ut pulvinar metus porta ac. Duis iaculis odio neque, a maximus leo egestas ut.",
         imagen: pizza
     },
     {
         titulo: "Hamburguesas",
-        descripcion: "Hamburguesas gourmet, un plato simple pero con la reversion gourmet nuestra",
+        descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nulla vitae nulla semper pulvinar. Suspendisse varius fringilla fermentum. Pellentesque tincidunt libero ipsum, vel iaculis sapien vehicula et. Vivamus lacus ante, consectetur at quam ac, varius elementum odio. Proin vel leo eu odio feugiat placerat sed ut nisl. Duis non nibh bibendum, euismod lorem sed, fringilla dui. Aliquam dictum, orci sed rutrum ornare, justo nunc maximus nibh, vel semper leo tellus at enim. Aenean volutpat odio nulla, ut pulvinar metus porta ac. Duis iaculis odio neque, a maximus leo egestas ut.",
         imagen: hamburguesa
     },
     {
         titulo: "Mariscos",
-        descripcion: "Contamos con distintos tipos de mariscos y peces de mar completamente frescos",
+        descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nulla vitae nulla semper pulvinar. Suspendisse varius fringilla fermentum. Pellentesque tincidunt libero ipsum, vel iaculis sapien vehicula et. Vivamus lacus ante, consectetur at quam ac, varius elementum odio. Proin vel leo eu odio feugiat placerat sed ut nisl. Duis non nibh bibendum, euismod lorem sed, fringilla dui. Aliquam dictum, orci sed rutrum ornare, justo nunc maximus nibh, vel semper leo tellus at enim. Aenean volutpat odio nulla, ut pulvinar metus porta ac. Duis iaculis odio neque, a maximus leo egestas ut.",
         imagen: marisco
     },
     {
         titulo: "Tragos",
-        descripcion: "Tenemos para ofrecerle una variedad enorme de tragos para acompañar de la mejo manera sus comidas, con y sin alcohol",
+        descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nulla vitae nulla semper pulvinar. Suspendisse varius fringilla fermentum. Pellentesque tincidunt libero ipsum, vel iaculis sapien vehicula et. Vivamus lacus ante, consectetur at quam ac, varius elementum odio. Proin vel leo eu odio feugiat placerat sed ut nisl. Duis non nibh bibendum, euismod lorem sed, fringilla dui. Aliquam dictum, orci sed rutrum ornare, justo nunc maximus nibh, vel semper leo tellus at enim. Aenean volutpat odio nulla, ut pulvinar metus porta ac. Duis iaculis odio neque, a maximus leo egestas ut.",
         imagen: trago
     }
 ];
