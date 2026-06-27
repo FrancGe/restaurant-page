@@ -1,9 +1,11 @@
 import "./css/style.css";
 import { cargarInicio } from "./inicio";
 import { cargarMenu } from "./menu";
+import { cargarContacto } from "./contacto";
 
 const paginaInicio = cargarInicio();
 const paginaMenu = cargarMenu();
+const paginaContacto = cargarContacto();
 
 const contenedorPrincipal = document.querySelector("#contenedor");
 const botonInicio = document.querySelector(".boton-inicio");
@@ -35,6 +37,12 @@ botonMenu.addEventListener("click", () => {
     contenedorPrincipal.append(cargarMenu());
     actualizarVentanaActiva(botonMenu);
 });
+
+botonContacto.addEventListener("click", ()=> {
+    contenedorPrincipal.textContent = "";
+    contenedorPrincipal.append(cargarContacto());
+    actualizarVentanaActiva(botonContacto);
+})
 
 inicializarPagina();
 
